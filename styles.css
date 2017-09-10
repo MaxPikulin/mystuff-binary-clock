@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: pink;
+
+    width: 350px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hours,
+.minutes,
+.seconds {
+    position: relative;
+    background-color: lightblue;
+    flex: 1;
+    border: 1px solid gray;
+    align-content: bottom;
+    align-items: bottom;
+    border-right: none;
+}
+
+.seconds {
+    border-right: 1px solid gray;
+}
+
+.lballs {
+    position: absolute;
+    bottom: 3px;
+    right: 59px;
+    width: 50px;
+}
+
+.rballs {
+    position: absolute;
+    bottom: 3px;
+    right: 4px;
+    width: 50px;
+}
+
+.balls {
+    margin-top: 3px;
+    bottom: 3px;
+    right: 4px;
+    border-radius: 90%;
+    background-color: darkgray;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Orbitron, sans-serif;
+}
+
+.balls p {
+    visibility: hidden;
+}
+
+p:hover {
+    visibility: visible;
+}
+
+.on {
+    background-color: lightsalmon;
+}
